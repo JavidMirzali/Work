@@ -10,113 +10,110 @@ section {
   width: 100%;
 }
 
-#about .textboxHead h1 {
-  font-weight: 700;
-  font-size: 50px;
+#about {
+  padding: 100px 0;
 }
-#about .textboxHead h4 {
-  font-size: 20px;
-  margin: 16px 0 65px;
-  color: #6C757D;
+#about .textbox h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+#about .textbox h1:hover {
+  cursor: text;
+}
+#about .textbox h3 {
+  font-size: 18px;
+  color: #6c757d;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 50px;
 }
 #about .box {
-  margin-bottom: 120px;
+  position: relative;
+  margin: 50px 0;
 }
-#about .box .textboxBeginnings, #about .box .textboxDecember {
-  padding: 0 120px 0 80px;
+#about .box .textbox {
+  width: 41%;
+  padding: 0 20px 20px 20px;
 }
-#about .box .textboxMarch, #about .box .textboxJuly {
-  padding: 0 80px 0 95px;
-}
-#about .box .textboxBeginnings h2, #about .box .textboxMarch h2, #about .box .textboxDecember h2, #about .box .textboxJuly h2 {
+#about .box .textbox h2 {
+  font-size: 28px;
   font-weight: 700;
-  font-size: 30px;
-  margin-bottom: 15px;
+  line-height: 1.5;
 }
-#about .box .textboxBeginnings p, #about .box .textboxMarch p, #about .box .textboxDecember p, #about .box .textboxJuly p {
-  font-size: 20px;
-  color: #6C757D;
-  line-height: 1.4;
+#about .box .textbox p {
+  color: #6c757d;
+  margin: 10px 0;
+  font-size: 19px;
+  line-height: 1.5;
 }
-#about .box .imgbox, #about .box .image {
+#about .box .imgbox {
   position: absolute;
   left: 43%;
   width: 170px;
   height: 170px;
-  border: 7px solid #e9ecef;
-  border-radius: 50%;
-  overflow: hidden;
+  border: solid #e9ecef;
+  border-width: 6px;
+  border-radius: 100%;
 }
-#about .box .image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#about .boxfive {
+  border-width: 6px;
+  border-radius: 100%;
   background-color: #ffc800;
+  width: 170px;
+  height: 170px;
+  border: solid #e9ecef;
 }
-#about .box .image h3 {
-  color: white;
-  font-size: 23px;
-  line-height: 1.3;
+#about .boxfive h5 {
+  margin: 0 0 8px 0;
+  color: #ffffff;
+  font-size: 24px;
   font-weight: 700;
-  padding: 0 35px;
 }
-
-@media screen and (max-width: 660px) {
-  #about {
-    justify-content: flex-end;
+@media (min-width: 992px) and (max-width: 1200px) {
+  #about .box .imgbox {
+    width: 150px;
+    height: 150px;
   }
-  #about .box .textboxBeginnings, #about .box .textboxMarch, #about .box .textboxDecember, #about .box .textboxJuly {
-    padding: 0;
-    margin: 0 20px 0 110px;
-  }
-  #about .box .imgbox, #about .box .image {
-    left: 0;
-    width: 90px;
-    height: 90px;
-    margin: 20px;
-    border: 5px solid #e9ecef;
-  }
-  #about .box .image h3 {
-    font-size: 13px;
-    font-weight: 500;
+  #about .boxfive {
+    width: 150px;
+    height: 150px;
   }
 }
-@media screen and (min-width: 661px) and (max-width: 767px) {
-  #about .box .textboxBeginnings, #about .box .textboxMarch, #about .box .textboxDecember, #about .box .textboxJuly {
-    padding: 0 20px 0 135px;
+@media (min-width: 768px) and (max-width: 992px) {
+  #about .box .imgbox {
+    width: 100px;
+    height: 100px;
   }
-  #about .box .imgbox, #about .box .image {
-    left: 0;
-    width: 90px;
-    height: 90px;
-    margin-left: 105px;
-    border: 5px solid #e9ecef;
+  #about .boxfive {
+    width: 100px;
+    height: 100px;
   }
-  #about .box .image h3 {
-    font-size: 13px;
-    font-weight: 500;
-    padding: 0 18px;
+  #about .boxfive h5 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  #about .box .textboxBeginnings, #about .box .textboxMarch, #about .box .textboxDecember, #about .box .textboxJuly {
-    padding: 0;
+@media (max-width: 767px) {
+  #about .box {
+    margin: 0;
   }
-  #about .box .textboxBeginnings, #about .box .textboxDecember {
-    padding-right: 90px;
-    padding-left: 30px;
+  #about .box .imgbox {
+    width: 80px;
+    height: 80px;
+    left: 0%;
   }
-  #about .box .textboxMarch, #about .box .textboxJuly {
-    padding-left: 70px;
-    padding-right: 41px;
+  #about .box .textbox {
+    margin-left: 80px;
+    width: 100%;
   }
-  #about .box .imgbox, #about .box .image {
-    width: 90px;
-    height: 90px;
-    border: 5px solid #e9ecef;
+  #about .boxfive {
+    width: 80px;
+    height: 80px;
   }
-  #about .box .image h3 {
-    font-size: 13px;
-    font-weight: 500;
+  #about .boxfive h5 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */

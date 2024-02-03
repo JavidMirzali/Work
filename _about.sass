@@ -1,95 +1,91 @@
 #about
-    .textboxHead
+    padding: 100px 0
+    .textbox
+        // overflow: hidden
         h1
+            font-size: 48px
             font-weight: 700
-            font-size: 50px
-        h4
-            font-size: 20px
-            margin: 16px 0 65px
-            color: #6C757D
+            margin: 0 0 20px
+            &:hover
+                cursor: text
+        h3
+            font-size: 18px
+            color: #6c757d
+            font-weight: 400
+            font-style: italic
+            margin: 0 0 50px
+
     .box
-        margin-bottom: 120px
-        .textboxBeginnings,.textboxDecember
-            padding: 0 120px 0 80px
-        .textboxMarch,.textboxJuly
-            padding: 0 80px 0 95px
-        .textboxBeginnings,.textboxMarch,.textboxDecember,.textboxJuly
+        position: relative
+        margin: 50px 0
+        .textbox
+            width: 41%
+            padding: 0 20px 20px 20px
             h2
+                font-size: 28px
                 font-weight: 700
-                font-size: 30px
-                margin-bottom: 15px
+                line-height: 1.5
             p
-                font-size: 20px
-                color: #6C757D
-                line-height: 1.4
-        .imgbox,.image
+                color: #6c757d
+                margin: 10px 0
+                font-size: 19px
+                line-height: 1.5
+        .imgbox
             position: absolute
             left: 43%
             width: 170px
             height: 170px
-            border: 7px solid #e9ecef
-            border-radius: 50%
-            overflow: hidden
-        .image
-            display: flex
-            justify-content: center
-            align-items: center
-            background-color: #ffc800
-            h3
-                color: #ffff
-                font-size: 23px
-                line-height: 1.3
-                font-weight: 700
-                padding: 0 35px
-@media screen and ( max-width: 660px  )
-    #about
-        justify-content: flex-end
+            border: solid #e9ecef
+            border-width: 6px
+            border-radius: 100%
+    .boxfive
+        border-width: 6px
+        border-radius: 100%
+        background-color: #ffc800
+        width: 170px
+        height: 170px
+        border: solid #e9ecef
+        h5
+            margin: 0 0 8px 0
+            color: #ffffff
+            font-size: 24px
+            font-weight: 700
+
+    @media (min-width: 992px) and (max-width: 1200px)
         .box
-            .textboxBeginnings,.textboxMarch,.textboxDecember,.textboxJuly
-                padding: 0
-                margin: 0 20px 0 110px
-            .imgbox,.image
-                left: 0
-                width: 90px
-                height: 90px
-                margin: 20px
-                border: 5px solid #e9ecef
-            .image
-                h3
-                    font-size: 13px
-                    font-weight: 500
-@media screen and (min-width: 661px) and ( max-width: 767px  )
-    #about
+            .imgbox
+                width: 150px
+                height: 150px
+        .boxfive
+            width: 150px
+            height: 150px
+
+    @media (min-width: 768px) and (max-width: 992px)
         .box
-            .textboxBeginnings,.textboxMarch,.textboxDecember,.textboxJuly
-                padding: 0 20px 0 135px
-            .imgbox,.image
-                left: 0
-                width: 90px
-                height: 90px
-                margin-left: 105px
-                border: 5px solid #e9ecef
-            .image
-                h3
-                    font-size: 13px
-                    font-weight: 500
-                    padding: 0 18px
-@media screen and (min-width: 768px) and (max-width: 1200px)
-    #about
+            .imgbox
+                width: 100px
+                height: 100px
+        .boxfive
+            width: 100px
+            height: 100px
+            h5
+                font-size: 16px
+                margin: 0 0 5px 0
+
+    @media (max-width: 767px)
         .box
-            .textboxBeginnings,.textboxMarch,.textboxDecember,.textboxJuly
-                padding: 0
-            .textboxBeginnings,.textboxDecember
-                padding-right: 90px
-                padding-left: 30px
-            .textboxMarch,.textboxJuly
-                padding-left: 70px
-                padding-right: 41px
-            .imgbox,.image
-                width: 90px
-                height: 90px
-                border: 5px solid #e9ecef
-            .image
-                h3
-                    font-size: 13px
-                    font-weight: 500
+            margin: 0
+            .imgbox
+                width: 80px
+                height: 80px
+                left: 0%
+            .textbox
+                margin-left: 80px
+                width: 100%
+        .boxfive
+            width: 80px
+            height: 80px
+            h5
+                font-size: 14px
+                font-weight: normal
+                margin: 0
